@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 01:29:05 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjA7MjAyNC0wNC0wMzsiMDE6MjU6NTYgIjsyNjI2"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjA7MjAyNC0wNC0wMzsiMDE6Mjk6MDUgIjsxOzI3MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="sobrenome" type="String" array="False" size=""/>
+            <declare name="tudo" type="String" array="False" size=""/>
+            <output expression="&quot;Me fale seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;E seu sobrenome tamb&#233;m&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <assign variable="tudo" expression="nome &amp; &quot; &quot; &amp; sobrenome"/>
+            <output expression="&quot;Seu nome &#233;: &quot; &amp; tudo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

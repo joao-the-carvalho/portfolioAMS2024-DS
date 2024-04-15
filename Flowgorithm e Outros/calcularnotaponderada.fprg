@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-03 02:32:36 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjU7MjAyNC0wMy0yNzsiMDM6MDk6MjcgIjsyNjM4"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjU7MjAyNC0wMy0yNzsiMDM6MTM6NTMgIjsxOzI3NDA="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjA7MjAyNC0wNC0wMzsiMDI6MzI6MzYgIjs0OzI3MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1" type="Real" array="False" size=""/>
+            <declare name="nota1pond" type="Real" array="False" size=""/>
+            <declare name="nota2" type="Real" array="False" size=""/>
+            <declare name="nota2pond" type="Real" array="False" size=""/>
+            <declare name="nota3" type="Real" array="False" size=""/>
+            <declare name="nota3pond" type="Real" array="False" size=""/>
+            <declare name="notafinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Nota 1:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Nota 2:&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Nota 3:&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="nota1pond" expression="nota1*2"/>
+            <assign variable="nota2pond" expression="nota2*3"/>
+            <assign variable="nota3pond" expression="nota3*5"/>
+            <assign variable="notafinal" expression="(nota1pond+nota2pond+nota3pond)/3"/>
+            <output expression="&quot;Sua nota final &#233;:&quot;" newline="True"/>
+            <output expression="notafinal" newline="True"/>
+            <if expression="notafinal &gt; 10">
+                <then>
+                    <output expression="notafinal/3" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

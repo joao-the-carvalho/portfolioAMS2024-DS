@@ -1,0 +1,1 @@
+Aqui, tenho alguns trabalhos feitos no Flowgorithm, e uma conversão que fiz de um trabalho feito, para compreender como funciona a conversão dos fluxogramas para os programas reais.

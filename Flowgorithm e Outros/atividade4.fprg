@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-06 11:46:27 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjA7MjAyNC0wNC0wMzsiMDI6MzM6MDIgIjsyNjE3"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDItMjA7MjAyNC0wNC0wMzsiMDI6Mzg6MzEgIjsxOzI3MzI="/>
+        <attribute name="edited" value="am9hb3Y7U0VPTjsyMDI0LTA0LTA2OyIxMTo0NjoyNyAiOzE7MjE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="centimetros" type="Integer" array="False" size=""/>
+            <declare name="decimetros" type="Real" array="False" size=""/>
+            <declare name="metros" type="Real" array="False" size=""/>
+            <declare name="milimetros" type="Integer" array="False" size=""/>
+            <output expression="&quot;Me fale uma medida em cent&#237;metros:&quot;" newline="True"/>
+            <input variable="centimetros"/>
+            <assign variable="decimetros" expression="centimetros/10"/>
+            <assign variable="metros" expression="centimetros/100"/>
+            <assign variable="milimetros" expression="centimetros*10"/>
+            <output expression="&quot;Em centimetros: &quot; &amp; decimetros &amp;&quot; decimetros, &quot; &amp; metros &amp;&quot; metros e &quot; &amp; milimetros &amp; &quot; milimetros.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

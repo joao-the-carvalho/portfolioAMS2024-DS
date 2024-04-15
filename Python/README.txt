@@ -1,0 +1,1 @@
+Essa é pasta dos meus projetos de Python, nada muito fora do comum.

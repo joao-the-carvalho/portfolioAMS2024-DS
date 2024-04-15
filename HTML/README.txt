@@ -1,0 +1,2 @@
+Aqui tenho meus trabalhos de HTML e alguns com uso de CSS e JS também, separado em 2 pastas para indicar se são trabalhos escolares ou extra-curriculares.
+A maioria foi feita mais para teste de Tags e para entender melhor como funciona HTML, CSS e JavaScript.
