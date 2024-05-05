@@ -1,0 +1,16 @@
+h1 {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: white;
+    border-bottom: 8px dotted red;
+}
+body {
+    background-color: #010080;
+}
+p {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}

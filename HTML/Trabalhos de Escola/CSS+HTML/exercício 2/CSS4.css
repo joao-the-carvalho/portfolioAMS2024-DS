@@ -1,0 +1,18 @@
+head {
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 14px;
+}
+.paragrafo1 {
+    background-color: #FFFF99;
+}
+.paragrafo2 {
+    background-color: #66CCFF;
+}
+.paragrafo3 {
+    background-color: #99FF66;
+}

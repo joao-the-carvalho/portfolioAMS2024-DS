@@ -1,0 +1,29 @@
+.paragrafo1 {
+    background-color: #FFFF99;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.paragrafo2 {
+    background-color: #66CCFF;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: dotted;
+    width: 85%;
+}
+.paragrafo3 {
+    background-color: #99FF66;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+body {
+ background-color: gray;
+
+}
+.p2, .p3 {
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+}

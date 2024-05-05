@@ -1,0 +1,47 @@
+head {
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-size: 14px;
+}
+.paragrafo1 {
+    background-color: #FFFF99;
+    color: navy;
+}
+.paragrafo2 {
+    background-color: rgb(25, 25, 25);
+    color: #FFFFFF;
+}
+.paragrafo3 {
+    background-color: #99FF66;
+    color: black;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.titulo1 {
+    color: maroon;
+    background-color: #FFFF99;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.titulo2{
+    color: #FFCC00;
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.titulo3 {
+    background-color: #99FF66;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
