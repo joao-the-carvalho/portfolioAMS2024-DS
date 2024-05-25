@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #result {
+      font-size: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guess the Number</h1>
+  <p>Guess a number between 1 and 100:</p>
+  <input type="text" id="guessField">
+  <input type="submit" value="Submit Guess" id="guessSubmit">
+  <div id="result"></div>
+
+  <script>
+    // Generate random number between 1 and 100
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    const guessSubmit = document.getElementById("guessSubmit");
+    const guessField = document.getElementById("guessField");
+    const result = document.getElementById("result");
+    let guessCount = 1;
+    let resetButton;
+
+    function checkGuess() {
+      let userGuess = Number(guessField.value);
+      if (guessCount === 1) {
+        result.textContent = "Previous guesses: ";
+      }
+      result.textContent += userGuess + " ";
+
+      if (userGuess === randomNumber) {
+        result.textContent = "Congratulations! You got it right!";
+        result.style.backgroundColor = "green";
+        gameOver();
+      } else if (guessCount === 10) {
+        result.textContent = "!!!GAME OVER!!! The number was " + randomNumber;
+        result.style.backgroundColor = "red";
+        gameOver();
+      } else {
+        result.textContent = "Wrong!";
+        result.style.backgroundColor = "red";
+        if (userGuess < randomNumber) {
+          result.textContent += " Try a higher number.";
+        } else {
+          result.textContent += " Try a lower number.";
+        }
+      }
+
+      guessCount++;
+      guessField.value = "";
+      guessField.focus();
+    }
+
+    guessSubmit.addEventListener("click", checkGuess);
+
+    function gameOver() {
+      guessField.disabled = true;
+      guessSubmit.disabled = true;
+      resetButton = document.createElement("button");
+      resetButton.textContent = "Start new game";
+      document.body.appendChild(resetButton);
+      resetButton.addEventListener("click", resetGame);
+    }
+
+    function resetGame() {
+      guessCount = 1;
+      const resetParas = document.querySelectorAll("#result p");
+      for (let i = 0; i < resetParas.length; i++) {
+        resetParas[i].textContent = "";
+      }
+
+      resetButton.parentNode.removeChild(resetButton);
+      guessField.disabled = false;
+      guessSubmit.disabled = false;
+      guessField.value = "";
+      guessField.focus();
+      result.style.backgroundColor = "white";
+
+      randomNumber = Math.floor(Math.random() * 100) + 1;
+    }
+  </script>
+</body>
+</html>

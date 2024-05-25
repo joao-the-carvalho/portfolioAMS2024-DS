@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Style>
+ h1 {
+    text-align: center;
+ }
+ p {
+    text-align: center;
+    font-size: large;
+ }
+ .spoiler {
+    text-align: center;
+    font-size: small;
+ }
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="password"], input[type="submit"] {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 5px;
+    }
+    button {
+        display:block;
+        margin: 10px auto;
+    }
+    
+    </Style>
+<header>
+    <h1>Bem vindo!</h1>
+    <hr>
+    <p>Para acessar os demais conteúdos do site, faça login</p>
+<p class="spoiler">ps: não dá pra logar, hihi.</p>
+</header>
+<main>
+    <form onsubmit="return enviarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+        
+        <input type="submit" value="Enviar" onclick="funcaoDaora()">
+
+        <script>
+            function funcaoDaora() {
+             alert("Você leu o aviso que eu dei?");
+            }
+        </script>
+</main>
+</body>
+</html>

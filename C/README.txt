@@ -1,0 +1,1 @@
+Um estudo básico da linguagem C, usando operadores e headers para executar funções, como o <time.h>, que dá informações do tempo.

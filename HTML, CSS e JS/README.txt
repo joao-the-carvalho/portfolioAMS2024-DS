@@ -1,0 +1,1 @@
+Estudos de JavaScript que fiz na maior parte com ajuda das documentações da Mozilla.

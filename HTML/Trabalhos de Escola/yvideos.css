@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    justify-content:left;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    font-size: xx-large;
+}
+body {
+    background-color: black;
+}

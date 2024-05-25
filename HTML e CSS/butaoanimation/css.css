@@ -1,0 +1,16 @@
+.btn:hover {
+    transform: translateY(-5px);
+}
+.buto {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 400px;
+    height: 200px;
+    font-size: larger;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}

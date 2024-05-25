@@ -1,0 +1,87 @@
+main{
+    background-image: url("https://i.ibb.co/5rKZ0WL/spacehey-escuro.jpg");
+    color: blueviolet;
+    padding: 6px 0px;
+    font-size: 90%;
+   font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a {
+  color: azure;
+  font-family: "Micro 5", sans-serif;
+  }
+  
+  h4 {
+    color: darkblue;
+  }
+  
+  .profile .blurbs .section h4 {
+    margin: 0;
+    color: #ED0707;
+    color: cornsilk;
+  }
+  
+  count {
+    color: blueviolet;
+  }
+  
+  footer {
+  background-color: #222222;
+  }
+  
+  p {
+  color: black;
+  }
+  
+  i {
+  color: white;
+  }
+  
+  .profile .url-info {
+    padding: 4px 7px;
+    color: white;
+  }
+  
+  .profile .blurbs .heading, .profile .friends .heading {
+    background: #f9c56c;
+    background: beige;
+    color: #ED0707;
+    color: var(--dark-orange);
+    padding: 2px 7px;
+  }
+  
+  b {
+  color: white;
+  }
+  
+  .details-table td {
+    background: #DBEAFE;
+    background: blueviolet;
+    vertical-align: top;
+  }
+  .comments-table td{
+      background:#FFFFFF;
+  }
+  
+  body {
+    background-color: #222;
+    background-color: #222;
+    font-family: verdana, arial, sans-serif, helvetica;
+  }
+  
+  html body div.container main div.row.profile div.col.w-40.left div.general-about div.details p {
+  color: white;
+  }
+  
+  html body div.container main div.row.profile div.col.w-40.left div.url-info p {
+  color: white;
+  }
+  
+  html body div.container main div.row.profile div.col.right div.blurbs div.inner div.section p {
+  color: azure;
+  }
+  
+  html body div.container main div.row.profile div.col.right div.blog-preview p {
+  color: azure;
+  }  

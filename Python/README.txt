@@ -1,1 +1,1 @@
-Essa é pasta dos meus projetos de Python, nada muito fora do comum.
+Alguns projetos que escrevi em python, com ajuda de algum tutorial ou documentação. São antigos, datados a alguns meses atrás.
