@@ -1,1 +1,0 @@
-Esses são alguns dos meus projetos como desenvolvedor de jogos usando a engine Construct 2. Eu tinha mais projetos, porém infelizmente perdi-os durante uma transição entre computadores.
