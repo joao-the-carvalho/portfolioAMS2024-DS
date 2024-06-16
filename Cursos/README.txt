@@ -1,0 +1,1 @@
+Essa é uma pasta onde vou colocar o andamento de cursos que estou fazendo/fiz/deixei de fazer.
