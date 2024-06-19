@@ -1,0 +1,47 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h3 {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: rgb(41, 78, 90);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+hr{
+    border-top: 1px dashed black;
+}
+.mundo:hover{
+    transform: scale(1.1) translateY(-3px);
+    transition: 0.5s;
+}
+a:hover, h1:hover{
+    transform: scale(1.1) translateY(-3px) ;
+    transition:0.5s;
+}
+a:not(:hover), h1:not(:hover){
+    transition: 0.5s;
+}
+.voltar{
+    text-align: left;
+}
+footer{
+background-color: rgb(179, 155, 126);
+bottom:0;
+}
+img:hover{
+    transform: rotate(-5deg) scale(1.1);
+    border: 3px dashed rgb(216, 191, 153);
+    transition: ease-in 0.09s;
+}
+img:not(:hover){
+    transition: ease-in 0.09s;
+}
