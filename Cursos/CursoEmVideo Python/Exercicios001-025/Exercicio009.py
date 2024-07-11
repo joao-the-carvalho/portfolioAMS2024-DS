@@ -1,3 +1,4 @@
+
 num = int(input('Digite um número: '))
 print('A Tabuada desse número é:\n{}'
       '\n'
