@@ -1,0 +1,8 @@
+#foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagemm {
+    display: block;
+}

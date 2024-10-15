@@ -1,1 +1,1 @@
-Estudos de JavaScript que fiz na maior parte com ajuda das documentações da Mozilla.
+Estudos de JavaScript que fiz na maior parte com ajuda das documentações da Mozilla e também exercícios escolares que fiz a pedido da minha professora de PW1, Rebeca.

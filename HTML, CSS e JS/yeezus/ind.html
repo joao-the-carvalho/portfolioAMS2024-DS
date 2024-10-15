@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CD Cover Inspired Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      background-color: #CECFD2;
+    }
+
+    .sidebar {
+      background-color: rgba(51, 51, 51, 0.8);
+      color: #fff;
+      padding: 20px;
+      width: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .red-square {
+      background-color: #ff0000;
+      width: 150px;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+    }
+
+    .cd {
+      height: 100vh;
+      width: auto;
+      max-width: 100vh;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      animation: spin 10s linear infinite;
+    }
+pre{
+  font-size: 25px;
+}
+    @keyframes spin {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="cd" src="cddvd-removebg-preview.png" alt="CD Image">
+  <div class="sidebar">
+    <pre>
+y
+e
+e
+z
+u
+s</pre>
+  </div>
+  <div class="main-content">
+    <div class="red-square"></div>
+  </div>  
+<script src="script.js"></script>
+</body>
+</html>

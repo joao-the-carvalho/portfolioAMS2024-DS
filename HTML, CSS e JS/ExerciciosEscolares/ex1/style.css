@@ -1,0 +1,42 @@
+body{
+    background-color: #8ACE00;
+    font-family: arial_narrowregular, "Arial Narrow", sans-serif;
+    font-size: 100px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    filter: blur(1px);
+}
+.center input,
+.center button,
+.center p {
+    margin: 10px 0;
+}
+.center input,
+.center button {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    filter: blur(0px);
+}
+.center input {
+    width: 30%;
+    padding: 5px;
+    font-size: 20px;
+}
+.center button{
+    font-size: 20px;
+}
+#resultado{
+    font-size: 25px;
+}
+.center h2{
+    font-size: 30px;
+}
