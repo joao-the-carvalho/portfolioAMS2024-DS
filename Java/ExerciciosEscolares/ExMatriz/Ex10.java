@@ -1,22 +1,23 @@
 import javax.swing.JOptionPane;
 public class Ex10 {
-    public static void main(String[] args) {
-        int[][] matriz = {
-            {42, 23, 12},
-            {22, 55, 64},
-            {14, 78, 91}
-        };
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("Valores da matriz:\n");
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                sb.append(matriz[i][j]).append(" ");
-            }
-            sb.append("\n");
-        }
-
-        JOptionPane.showMessageDialog(null, sb.toString(), "Exibindo Elementos da Matriz", JOptionPane.INFORMATION_MESSAGE);
-    }
+		public static void main(String[] args) {
+		int[][] mat = {{1,42,23,14,51}, {22,32,55,54,12}};
+		int x,y;
+		JOptionPane.showMessageDialog(null, "******* Exibindo os numeros pares da matriz ********");
+		for (x=0; x < 2; x++) {
+			for (y=0; y<5; y++) {
+			if (mat[x][y] % 2 == 0) {
+				System.out.println(mat[x][y]+ " ");
+			}
+			else {
+				System.out.println(" - ");
+				
+			}
+			
+			
+		}
+			System.out.println("\n");
+	}
+  }
 }
+
