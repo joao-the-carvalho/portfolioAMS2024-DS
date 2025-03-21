@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de notas</title>
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+        body, html{
+            background-image: url(https://i.imgur.com/K09kp36.jpeg);
+            font-family: "Orbitron", sans-serif;
+            background-size: cover;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            color:whitesmoke;
+        }
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+.borda{
+            border: 2px solid #d28f2a;
+        padding: 40px;
+        text-align: center;
+        background: linear-gradient(45deg, #b77427, #ca7423);
+        border-radius: 10px;
+        opacity: 0.85;
+        }
+        input{
+            width: 170px;
+        }
+        button{
+            border-radius: 10px;
+            border: none;
+            width: 150px;
+            height: 50px;
+            background: linear-gradient(45deg, #937e50, #ae7b2a);
+            box-shadow: #000000 1px 1px 3px;
+            color: aliceblue;
+            text-decoration:double;
+        }
+        button:hover{
+            transform: scale(1.2);
+            transition-timing-function: ease-in;
+            transition-duration: 0.1s;
+            background: linear-gradient(45deg, #ae7b2a, #937e50);
+        }
+        button:not(:hover){
+            transform: scale(1);
+            transition-timing-function: ease-in;
+            transition-duration: 0.1s;
+        }
+    </style>
+    <div class="container"><h2>Calculadora de média</h2><br>
+    <form action="Exercicio3.php" method="post">
+        <div class="borda">
+    <p>Digite sua 1° nota:</p><input type="number" name="n1" min="0" max="10"><br>
+    <p>Digite sua 2° nota:</p><input type="number" name="n2" min="0" max="10"><br>
+    <p>Digite sua 3° nota:</p><input type="number" name="n3" min="0" max="10"><br>
+    <p>Digite sua 4° nota:</p><input type="number" name="n4" min="0" max="10"><br><br>
+    <button type="submit">Enviar</button>
+</div>
+</div>
+    </form>
+</body>
+</html>

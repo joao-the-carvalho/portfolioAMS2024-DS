@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>4 Notas</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+    body, html{
+    background-image: url(https://i.imgur.com/bohevMP.jpeg);
+    font-family: "Orbitron", sans-serif;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+.borda{
+    border: 2px solid #64aed9;
+padding: 40px;
+text-align: center;
+background: linear-gradient(45deg, #373c72, #5ab2f5);
+border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #243059, #5aa2f5);
+    box-shadow: #000000 1px 1px 3px;
+    color: aliceblue;
+    text-decoration:double;
+}
+button:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    background: linear-gradient(45deg, #5aa2f5, #243059);
+}
+button:not(:hover){
+    transform: scale(1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+h2{
+    color: whitesmoke;
+    text-shadow: #000 1px 1px 3px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    }
+</style>
+    <div class="container"><h2>Calculadora de media</h2><br>
+    <form action="Exercicio7.php" method="post">
+    <div class="borda">
+    <p>Digite sua primeira nota:</p><input type="number" name="n1"><br>
+    <p>Digite sua segunda nota:</p><input type="number" name="n2"><br>
+    <p>Digite sua terceira nota:</p><input type="number" name="n3"><br>
+    <p>Digite sua quarta nota:</p><input type="number" name="n4"><br><br>
+    <button type="submit">Enviar</button>
+    </div>
+</div>
+    </form>
+</body>
+</html>

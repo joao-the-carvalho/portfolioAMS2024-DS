@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maior e Menor numero</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+    body, html{
+    background-image: url(https://i.imgur.com/50K7Nzc.jpeg);
+    font-family: "Orbitron", sans-serif;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+.borda{
+    border: 2px solid #74d964;
+padding: 40px;
+text-align: center;
+background: linear-gradient(45deg, #397237, #64f55a);
+border-radius: 10px;
+}
+.enviar{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #285924, #5af55d);
+    box-shadow: #000000 1px 1px 3px;
+    color: aliceblue;
+    text-decoration:double;
+}
+.enviar:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    background: linear-gradient(45deg, #5af55d, #285924);
+}
+.enviar:not(:hover){
+    transform: scale(1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+h2{
+    color: whitesmoke;
+    text-shadow: #000 1px 1px 3px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    }
+    .window{
+        background: linear-gradient(45deg, #5af55d, #285924);
+        width: 300px;
+        color: black;
+        font-weight: bold;
+    }
+    .close{
+        width: 80px;
+        height: 27px;
+        background: linear-gradient(45deg, red, darkred);
+        border: 0;
+        border-radius: 5px;
+    }
+    .windowdaora{
+        display: flex;
+        align-items: center;
+        background-color: grey;
+    }
+</style>
+    <div class="container">
+       <div class="windowdaora"><input type="text" class="window" readonly placeholder="Maior e Menor"><button class="close" type="reset">X</button></div>
+    <form action="Exercicio8.php" method="post">
+    <div class="borda">
+        <p>Digite o primeiro numero:</p> <input type="number" name="n1"><br>
+        <p>Digite o segundo numero:</p> <input type="number" name="n2"><br>
+        <p>Digite o terceiro numero:</p> <input type="number" name="n3"><br><br>
+        <button type="submit" class="enviar">Enviar</button>
+    </div>
+</div>
+    </form>
+</body>
+</html>

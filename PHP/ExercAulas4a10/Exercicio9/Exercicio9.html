@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Soma dos impares</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+    body, html{
+    background-image: url(https://i.imgur.com/4GCq2er.jpeg);
+    font-family: "Orbitron", sans-serif;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+.borda{
+    border: 2px solid #9adc90;
+padding: 40px;
+text-align: center;
+background: linear-gradient(45deg, #577237, #aff55a);
+border-radius: 10px;
+}
+.enviar{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #527531, #aaf55a);
+    box-shadow: #000000 1px 1px 3px;
+    color: aliceblue;
+    text-decoration:double;
+}
+.enviar:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    background: linear-gradient(45deg, #aaf55a, #527531);
+}
+.enviar:not(:hover){
+    transform: scale(1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+h2{
+    color: whitesmoke;
+    text-shadow: #000 1px 1px 3px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    }
+    .window{
+        background: linear-gradient(45deg, #aaf55a, #577237);
+        width: 300px;
+        color: black;
+        font-weight: bold;
+    }
+    .close{
+        width: 80px;
+        height: 27px;
+        background: linear-gradient(45deg, red, darkred);
+        border: 0;
+        border-radius: 5px;
+    }
+    .windowdaora{
+        display: flex;
+        align-items: center;
+        background-color: grey;
+    }
+</style>
+    <div class="container">
+        <div class="windowdaora"><input type="text" class="window" readonly placeholder="Soma de Impares em um Intervalo"><button class="close" type="reset">X</button></div>
+    <form action="Exercicio9.php" method="post">
+        <div class="borda">
+        <p>Digite o numero inicial do intervalo: </p><input type="number" name="inc">
+        <p>Digite o numero final do intervalo: </p><input type="number" name="fim"><br><br>
+        <button class="enviar" type="submit">Enviar</button>
+    </div>
+</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de variáveis</title>
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <Style>
+                       @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+        body, html{
+            background-image: url(https://i.imgur.com/JnDo5Ox.jpeg);
+            font-family: "Orbitron", sans-serif;
+            background-size: cover;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+}
+.borda{
+            border: 2px solid #64a4d9;
+        padding: 40px;
+        text-align: center;
+        background: linear-gradient(45deg, #2f3641, #5a9df5, #a9c7ef);
+        border-radius: 10px;
+        opacity: 0.85;
+        }
+        button{
+            border-radius: 10px;
+            border: none;
+            width: 150px;
+            height: 50px;
+            background: linear-gradient(45deg, #3b3d53, #5a81f5, #a2c2eb);
+            box-shadow: #000000 1px 1px 3px;
+            color: aliceblue;
+            text-decoration:double;
+        }
+        button:hover{
+            transform: scale(1.2);
+            transition-timing-function: ease-in;
+            transition-duration: 0.1s;
+            background: linear-gradient(45deg, #a2c2eb, #5a81f5, #3b3d53);
+        }
+        button:not(:hover){
+            transform: scale(1);
+            transition-timing-function: ease-in;
+            transition-duration: 0.1s;
+        }
+    </style>
+    <div class="container"><h2>Troca de Variáveis</h2>
+    <form action="Exercicio4.php" method="post">
+        <div class="borda">
+        <p>Digite o primeiro valor: </p><input type="number" name="v1"><br>
+        <p>Digite o segundo valor: </p><input type="number" name="v2"><br>
+        <br>
+        <button type="submit">Enviar</button>
+    </div>
+</div>    
+    </form>
+</body>
+</html>

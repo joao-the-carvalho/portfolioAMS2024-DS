@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+    body, html{
+    background-image: url(https://i.imgur.com/AxJJGhr.jpeg);
+    font-family: "Orbitron", sans-serif;
+    background-size:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+:root{
+              --darkgray: #2c3e50;
+        }
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+.borda{
+    border: 2px solid #90bcdc;
+padding: 40px;
+text-align: center;
+background: linear-gradient(45deg, #375272, #5aa2f5);
+border-radius: 10px;
+}
+.enviar{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #314b75, #5accf5);
+    box-shadow: #000000 1px 1px 3px;
+    color: aliceblue;
+    text-decoration:double;
+}
+.enviar:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    background: linear-gradient(45deg, #5accf5, #314b75);
+}
+.enviar:not(:hover){
+    transform: scale(1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+h2{
+    color: whitesmoke;
+    text-shadow: #000 1px 1px 3px;
+}
+input{
+    width: 300px;
+    height: 20px;
+    }
+    .window{
+        background: linear-gradient(45deg, #375272, #5aa2f5);
+        width: 300px;
+        color: black;
+        font-weight: bold;
+    }
+    .close{
+        width: 80px;
+        height: 27px;
+        background: linear-gradient(45deg, red, darkred);
+        border: 0;
+        border-radius: 5px;
+    }
+    .windowdaora{
+        display: flex;
+        align-items: center;
+        background-color: grey;
+    }
+    select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+.select:hover::after {
+  color: #f39c12;
+}
+</style>
+<div class="container">
+    <div class="windowdaora"><input type="text" class="window" readonly placeholder="Calculadora Básica (4 Operações)"><button class="close" type="reset">X</button></div>
+    <form action="Exercicio11.php" method="POST">
+        <div class="borda">
+        <p>Digite o primeiro valor:</p>
+        <input type="number" name="v1">
+        <p>Digite o segundo valor:</p>
+        <input type="number" name="v2">
+        <p>Escolha a operação:</p>
+        <select name="tipoconta">
+            <option value="+">Mais (+)</option>
+            <option value="-">Menos (-)</option>
+            <option value="*">Vezes (*)</option>
+            <option value="/">Divisão (/)</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </div>
+</div>
+    </form>
+</body>
+</html>

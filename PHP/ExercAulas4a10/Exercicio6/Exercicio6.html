@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <link rel="icon" type="image/x-icon" href="https://frutigeraeroarchive.org/images/icons/vista_netcenter.ico">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Orbitron:wght@400..900&display=swap');
+    body, html{
+    background-image: url(https://i.imgur.com/nYqTogx.jpeg);
+    font-family: "Orbitron", sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: 0;
+padding: 0;
+}
+.borda{
+    border: 2px solid #6cd964;
+padding: 40px;
+text-align: center;
+background: linear-gradient(45deg, #387237, #62f55a);
+border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #245925, #74f55a);
+    box-shadow: #000000 1px 1px 3px;
+    color: aliceblue;
+    text-decoration:double;
+}
+button:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+    background: linear-gradient(45deg, #74f55a, #245925);
+}
+button:not(:hover){
+    transform: scale(1);
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+h2{
+    color: whitesmoke;}
+input{
+    width: 300px;
+    height: 20px;
+    }
+</style>
+<div class="container">
+    <h2>Calcular Salário</h2>
+    <form action="Exercicio6.php" method="post">
+        <div class="borda">
+        <p>Digite seu salário BRUTO (apenas números, sem R$): </p><input type="number" name="sal"><br><br>
+        <button type="submit">Enviar</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
